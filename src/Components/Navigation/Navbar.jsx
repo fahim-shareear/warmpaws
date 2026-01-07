@@ -21,9 +21,15 @@ const Navbar = () => {
     }
 
     const menu = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/profile">My Profile</NavLink></li>
+        <li data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"><NavLink to="/">Home</NavLink></li>
+        <li data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"><NavLink to="/services">Services</NavLink></li>
+        <li data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"><NavLink to="/profile">My Profile</NavLink></li>
     </>
     return (
         <div className="navbar shadow-sm sticky top-0 bg-primary z-100">
@@ -54,7 +60,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? (
-                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group">
+                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group" data-aos="zoom-in">
                         <FaHouseUser className="font-bold text-4xl cursor-pointer" />
 
                         <div className="absolute top-12 right-0 w-40 p-2 border-2 backdrop-blur-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -62,14 +68,14 @@ const Navbar = () => {
                         </div>
                         </div>
                     ) : (
-                        <button className="btn mr-4 cursor-pointer">
+                        <button className="btn mr-4 cursor-pointer" data-aos="zoom-in">
                         <Link to="/register">Register</Link>
                         </button>
                     )
                     }
 
                 {
-                    user ? <button className="btn cursor-pointer"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
+                    user ? <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login">Log In</Link></button>
                 }
             </div>
         </div>

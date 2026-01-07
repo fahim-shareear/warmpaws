@@ -63,8 +63,8 @@ const Login = () => {
     };
 
     return (
-        <div className="flex items-center justify-center w-full h-screen log">
-            <form className="form" onSubmit={handleLogIn}>
+        <div className="flex items-center justify-center w-full h-screen log" data-aos="flip-right">
+            <form className="form" onSubmit={handleLogIn} data-aos="zoom-in-up">
                 <fieldset className="fieldset border-base-300 rounded-box w-xs">
                         <legend className="fieldset-legend text-xl">Log In</legend>
 

@@ -30,8 +30,9 @@ const Resetpassword = () => {
     }
 
     return (
-        <div className="flex items-center border-2 main h-screen">
-            <form className="backdrop-blur-md mx-auto border-2 border-white rounded-xl p-2" onSubmit={handleSubmit}>
+        <div className="flex items-center border-2 main h-screen" data-aos="flip-right">
+            <form className="backdrop-blur-md mx-auto border-2 border-white rounded-xl p-2" onSubmit={handleSubmit} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
                 <fieldset className="fieldset bg-transparent rounded-box w-xs border-white border p-4">
                     <legend className="fieldset-legend">Reset Password</legend>
 

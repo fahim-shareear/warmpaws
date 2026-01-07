@@ -78,8 +78,8 @@ const Register = () => {
 
 
     return (
-        <div className="flex items-center justify-center w-full h-screen reg">
-            <form className="form" onSubmit={handleRegistration}>
+        <div className="flex items-center justify-center w-full h-screen reg" data-aos="flip-right">
+            <form className="form" onSubmit={handleRegistration} data-aos="zoom-in">
                 <fieldset className="fieldset border-base-300 rounded-box w-xs">
                         <legend className="fieldset-legend text-xl">Register</legend>
 
