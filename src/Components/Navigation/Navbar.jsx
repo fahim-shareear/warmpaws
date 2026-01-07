@@ -38,10 +38,13 @@ const Navbar = () => {
                     {menu}
                 </ul>
                 </div>
-                <div className="flex items-center">
-                    <img src={"/src/assets/tiger_15642419.gif"} alt="" width={40} height={40} className="rounded-full"/>
-                    <a className="btn btn-ghost text-xl text-wrap hidden lg:flex">WarmPaws – Pet Care in Winter</a>
-                </div>
+                
+                <Link to="/">
+                    <div className="flex items-center">
+                        <img src={"/src/assets/tiger_15642419.gif"} alt="" width={40} height={40} className="rounded-full"/>
+                        <p className="btn btn-ghost text-xl text-wrap hidden lg:flex">WarmPaws – Pet Care in Winter</p>
+                    </div>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-bold text-[17px]">
