@@ -79,7 +79,7 @@ const Navbar = () => {
                     }
 
                 {
-                    user ? <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
+                    user ? <button className="btn cursor-pointer"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
                 }
             </div>
         </div>
