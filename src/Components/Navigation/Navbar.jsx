@@ -20,6 +20,10 @@ const Navbar = () => {
             })
     }
 
+    const profileRoute = () =>{
+        navigate("/profile");
+    }
+
     const menu = <>
         <li data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
@@ -60,7 +64,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? (
-                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group">
+                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group" onClick={profileRoute}>
                         <FaHouseUser className="font-bold text-4xl cursor-pointer" />
 
                         <div className="absolute top-12 right-0 w-40 p-2 border-2 backdrop-blur-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
