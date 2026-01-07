@@ -29,13 +29,23 @@ const Profile = () => {
         photoURL: photo,
       });
       toast.success("Profile updated successfully");
-      loading
       setPanelOpen(false);
     } catch (error) {
       console.error(error);
+      toast.error("Failed to update profile");
     }
   };
 
+  // ==================== LOADER ====================
+  if (loading) {
+    return (
+      <div className="min-h-screen flex justify-center items-center bg-gray-900">
+        <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-20 w-20"></div>
+      </div>
+    );
+  }
+
+  // ==================== PROFILE CONTENT ====================
   return (
     <div
       className="min-h-screen profile text-white relative overflow-hidden"
@@ -56,7 +66,7 @@ const Profile = () => {
         </div>
 
         {/* PROFILE IMAGE */}
-        <div className="absolute -bottom-20 left-1/2 lg:left-32 transform -translate-x-1/2 lg:translate-x-0">
+        <div className="absolute -bottom-20 left-1/2 lg:left-32 transform -translate-x-1/2 lg:translate-x-0" data-aos="fade-up-right">
           <img
             src={user?.photoURL || "https://i.pravatar.cc/300"}
             alt="profile"
@@ -68,14 +78,13 @@ const Profile = () => {
       {/* ================= USER INFO ================= */}
       <div className="mt-24 px-6 lg:px-32 relative z-10">
         <div className="max-w-2xl">
-
-          <div className="info-box">
+          <div className="info-box" data-aos="fade-left">
             <h2 className="text-3xl font-semibold">
               {capitalizeName(user?.displayName || "Unnamed User")}
             </h2>
           </div>
 
-          <div className="info-box mt-3">
+          <div className="info-box mt-3" data-aos="fade-left">
             <p className="text-gray-300">{user?.email}</p>
           </div>
 
@@ -100,7 +109,6 @@ const Profile = () => {
         }}
       >
         <div className="relative p-6 h-full flex flex-col">
-
           {/* CLOSE BUTTON */}
           <button
             onClick={() => setPanelOpen(false)}
