@@ -6,14 +6,26 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 const Login = () => {
     const [eye, setEye] = useState(false);
 
+    const handleLogIn = e =>{
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log("Log in data", email, password);
+    }
+
 
     const handleEye = e =>{
         e.preventDefault();
-        setEye(!eye);
+        setEye(!eye)
+
+        setTimeout(()=>{
+            setEye(false);
+        }, 3000);
     }
+
     return (
         <div className="flex items-center justify-center w-full h-screen log">
-            <form className="form">
+            <form className="form" onSubmit={handleLogIn}>
                 <fieldset className="fieldset border-base-300 rounded-box w-xs">
                         <legend className="fieldset-legend text-xl">Log In</legend>
 

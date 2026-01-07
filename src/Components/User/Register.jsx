@@ -69,6 +69,10 @@ const Register = () => {
     const handleEye = (e) =>{
         e.preventDefault();
         setEye(!eye);
+
+        setTimeout(()=>{
+            setEye(false);
+        }, 3000);
     }
 
 
