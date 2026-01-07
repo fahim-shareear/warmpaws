@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ? (
-                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group" data-aos="zoom-in">
+                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group">
                         <FaHouseUser className="font-bold text-4xl cursor-pointer" />
 
                         <div className="absolute top-12 right-0 w-40 p-2 border-2 backdrop-blur-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -68,14 +68,14 @@ const Navbar = () => {
                         </div>
                         </div>
                     ) : (
-                        <button className="btn mr-4 cursor-pointer" data-aos="zoom-in">
+                        <button className="btn mr-4 cursor-pointer">
                         <Link to="/register">Register</Link>
                         </button>
                     )
                     }
 
                 {
-                    user ? <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login">Log In</Link></button>
+                    user ? <button className="btn cursor-pointer" data-aos="zoom-in"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
                 }
             </div>
         </div>

@@ -30,6 +30,7 @@ const Login = () => {
                 const user = result.user;
                 toast.success(`${user.displayName.toUpperCase()} Has logged In Successfully`);
                 e.target.reset();
+                loading
                 navigate(location?.state || "/");
             })
             .catch((error) =>{
@@ -43,8 +44,9 @@ const Login = () => {
         googlePopUp()
             .then(()=>{
                 toast.success("User Logged In");
-                loading;
-                navigate(location?.state || "/");
+                const redirectPath = location.state?.from?.pathname || "/";
+                navigate(redirectPath, { replace: true });
+
             })
             .catch((error)=>{
                 toast.error(error.message);
