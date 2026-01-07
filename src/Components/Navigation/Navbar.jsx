@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     const menu = <>
@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><NavLink to="/profile">My Profile</NavLink></li>
     </>
     return (
-        <div className="navbar shadow-sm sticky top-0 bg-primary">
+        <div className="navbar shadow-sm sticky top-0 bg-primary z-100">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,7 +29,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Log In</a>
+                <button className="btn mr-4 cursor-pointer"><Link to="/register">Register</Link></button>
+                <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
             </div>
         </div>
     );

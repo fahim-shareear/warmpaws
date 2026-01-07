@@ -7,6 +7,8 @@ import Home from './Components/Pages/Home'
 import Services from './Components/Pages/Services'
 import Profile from './Components/Pages/Profile'
 import AuthProvider from './Components/Authentications/AuthProvider'
+import Register from './Components/User/Register'
+import Login from './Components/User/Login'
 
 
 const router = createBrowserRouter([
@@ -14,6 +16,8 @@ const router = createBrowserRouter([
     children:[
       {index: true, Component: Home},
       {path: "services", Component: Services},
+      {path: "register", Component: Register},
+      {path: "login", Component: Login},
       {path: "profile", element: <Profile></Profile>}
     ]
   }
