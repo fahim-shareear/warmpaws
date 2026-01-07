@@ -11,10 +11,12 @@ import Register from './Components/User/Register'
 import Login from './Components/User/Login'
 import Privateroutes from './Components/Root/Routes/Privateroutes'
 import Resetpassword from './Components/Root/Routes/Resetpassword'
+import Errorpage from './Components/Errorpage/Errorpage'
 
 
 const router = createBrowserRouter([
-  {path: "/", Component: Root,
+  {path: "/", errorElement: <Errorpage></Errorpage>
+    ,Component: Root,
     children:[
       {index: true, Component: Home},
       {path: "services", element: <Privateroutes>

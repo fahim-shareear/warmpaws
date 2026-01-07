@@ -31,7 +31,8 @@ const Login = () => {
                 toast.success(`${user.displayName.toUpperCase()} Has logged In Successfully`);
                 e.target.reset();
                 loading
-                navigate(location?.state || "/");
+                const redirectPath = location.state?.from?.pathname || "/"
+                navigate(redirectPath, {replace: true});
             })
             .catch((error) =>{
                 toast.error(error.message);
