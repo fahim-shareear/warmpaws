@@ -6,7 +6,7 @@ const Errorpage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-purple-600 via-pink-500 to-indigo-600">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden bg-linear-to-br from-purple-600 via-pink-500 to-indigo-600" data-aos="flip-left">
       
       {/* Decorative blurred blobs */}
       <div className="absolute -top-25 -left-25 w-72 h-72 bg-pink-400 opacity-30 rounded-full blur-3xl"></div>
