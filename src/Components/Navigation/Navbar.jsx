@@ -5,13 +5,14 @@ import { toast } from 'react-toastify';
 import { FaHouseUser } from 'react-icons/fa';
 
 const Navbar = () => {
-    const {user, signOutUser} = use(AuthContext);
+    const {user, signOutUser, loading} = use(AuthContext);
     const navigate = useNavigate();
 
     const handleSignOut = () =>{
         signOutUser()
             .then(() =>{
                 toast.success("User Signed Out");
+                loading
                 navigate("/login");
             })
             .catch((error) =>{
@@ -21,6 +22,7 @@ const Navbar = () => {
     }
 
     const profileRoute = () =>{
+        loading;
         navigate("/profile");
     }
 

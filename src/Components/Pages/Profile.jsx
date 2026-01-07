@@ -2,11 +2,12 @@ import React, { useContext, useState } from "react";
 import { AuthContext } from "../Authentications/AuthContext";
 import { updateProfile } from "firebase/auth";
 import "./Profile.css";
+import { toast } from "react-toastify";
 
 const NAVBAR_HEIGHT = 64; // px
 
 const Profile = () => {
-  const { user } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
 
   const [panelOpen, setPanelOpen] = useState(false);
   const [name, setName] = useState(user?.displayName || "");
@@ -27,7 +28,8 @@ const Profile = () => {
         displayName: name,
         photoURL: photo,
       });
-      alert("Profile updated successfully");
+      toast.success("Profile updated successfully");
+      loading
       setPanelOpen(false);
     } catch (error) {
       console.error(error);
