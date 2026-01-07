@@ -50,6 +50,7 @@ const Profile = () => {
     <div
       className="min-h-screen profile text-white relative overflow-hidden"
       style={{ paddingTop: NAVBAR_HEIGHT }}
+       data-aos="flip-left"
     >
       {/* ================= COVER SECTION ================= */}
       <div className="relative">
