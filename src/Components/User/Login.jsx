@@ -21,9 +21,9 @@ const Login = () => {
                         <input type="email" className="input bg-transparent" placeholder="Email" name='email'/>
 
                         <div className="relative">
-                            <label className="label font-bold text-white">Password</label>
+                            <label className="label font-bold text-white mb-1">Password</label>
                             <input type={eye ? "text" : "password"} className="input bg-transparent" placeholder="Password" name='password'/>
-                            <button onClick={handleEye} className="absolute text-[18px] cursor-pointer top-7 right-5">
+                            <button onClick={handleEye} className="absolute text-[18px] cursor-pointer top-8 right-5">
                                 {
                                     eye ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                                 }

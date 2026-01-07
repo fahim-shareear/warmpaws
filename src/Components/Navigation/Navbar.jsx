@@ -1,7 +1,25 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router';
+import React, { use } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router';
+import { AuthContext } from '../Authentications/AuthContext';
+import { toast } from 'react-toastify';
+import { FaHouseUser } from 'react-icons/fa';
 
 const Navbar = () => {
+    const {user, signOutUser} = use(AuthContext);
+    const navigate = useNavigate();
+
+    const handleSignOut = () =>{
+        signOutUser()
+            .then(() =>{
+                toast.success("User Signed Out");
+                navigate("/login");
+            })
+            .catch((error) =>{
+                toast.error(error.message);
+                return;
+            })
+    }
+
     const menu = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/services">Services</NavLink></li>
@@ -29,8 +47,25 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn mr-4 cursor-pointer"><Link to="/register">Register</Link></button>
-                <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
+                {
+                    user ? (
+                        <div className="border-2 mr-4 text-center p-1 rounded-full relative group">
+                        <FaHouseUser className="font-bold text-4xl cursor-pointer" />
+
+                        <div className="absolute top-12 right-0 w-40 p-2 border-2 backdrop-blur-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 className="font-bold text-white">{user.displayName}</h3>
+                        </div>
+                        </div>
+                    ) : (
+                        <button className="btn mr-4 cursor-pointer">
+                        <Link to="/register">Register</Link>
+                        </button>
+                    )
+                    }
+
+                {
+                    user ? <button className="btn cursor-pointer"><Link to="/login" onClick={handleSignOut}>Sign Out</Link></button> :  <button className="btn cursor-pointer"><Link to="/login">Log In</Link></button>
+                }
             </div>
         </div>
     );

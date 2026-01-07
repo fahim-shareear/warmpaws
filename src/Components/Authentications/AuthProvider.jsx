@@ -10,26 +10,35 @@ const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true);
 
+    
+
+
     const googlePopUp = () =>{
         setLoading(true)
         return signInWithPopup(auth, googleProvider);
     }
 
-
+//this one is for creating user with email and password
     const createUser = (email, password) =>{
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
+//this one is for signing in with email and password.
     const signInUser = (email, password) =>{
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password);
     }
 
+
+//this is the signout feature.
     const signOutUser = () =>{
         return signOut(auth);
     }
 
+
+
+//this one is for putting the guard up if the user is in or out
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth, (currentUser) =>{
             setUser(currentUser);
