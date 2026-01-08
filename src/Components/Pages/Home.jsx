@@ -9,30 +9,10 @@ import 'swiper/css/pagination';
 import { AuthContext } from '../Authentications/AuthContext';
 import { NavLink } from 'react-router';
 
-// const slides = [
-//   {
-//     title: "Fresh Flowers Collection",
-//     subtitle: "Make every moment special",
-//     button: "Shop Now",
-//     image: "/images/slide1.jpg",
-//   },
-//   {
-//     title: "Wedding Flower Designs",
-//     subtitle: "Elegant & Beautiful",
-//     button: "Explore",
-//     image: "/images/slide2.jpg",
-//   },
-//   {
-//     title: "Birthday Special Bouquets",
-//     subtitle: "Spread happiness",
-//     button: "Order Today",
-//     image: "/images/slide3.jpg",
-//   },
-// ];
+
 
 const Home = () => {
   const {services} = use(AuthContext);
-  console.log(services);
   return (
     <div className="home">
       <Swiper navigation={true} autoplay={true} pagination={{ clickable: true }} modules={[Navigation, Pagination, Autoplay]} className="heroSwiper">
