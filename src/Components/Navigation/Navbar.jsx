@@ -4,6 +4,7 @@ import { AuthContext } from '../Authentications/AuthContext';
 import { toast } from 'react-toastify';
 import { FaHouseUser } from 'react-icons/fa';
 import "../Pages/Style/Home.css";
+import Logo from "../../../public/assets/logo.gif"
 
 const Navbar = () => {
     const {user, signOutUser, loading} = use(AuthContext);
@@ -48,7 +49,7 @@ const Navbar = () => {
                 
                 <Link to="/">
                     <div className="flex items-center">
-                        <img src={"./src/assets/tiger_15642419.gif"} alt="" width={40} height={40} className="rounded-full"/>
+                        <img src={Logo} alt="" width={40} height={40} className="rounded-full"/>
                         <p className="btn btn-ghost text-xl text-wrap hidden lg:flex">WarmPaws – Pet Care in Winter</p>
                     </div>
                 </Link>
