@@ -27,15 +27,9 @@ const Navbar = () => {
     }
 
     const menu = <>
-        <li data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"><NavLink to="/">Home</NavLink></li>
-        <li data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"><NavLink to="/services">Services</NavLink></li>
-        <li data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"><NavLink to="/profile">My Profile</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/services">Services</NavLink></li>
+        <li><NavLink to="/profile">My Profile</NavLink></li>
     </>
     return (
         <div className="navbar shadow-sm sticky top-0 bg-primary z-100">
