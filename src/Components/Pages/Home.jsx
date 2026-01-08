@@ -50,13 +50,13 @@ const Home = () => {
           }
       </Swiper> */}
       <div className="w-full">
-    <div className="lg:max-w-11/12 mx-auto border-2 rounded-xl border-white bg-white/5 backdrop-blur-md">
+    <div className="lg:max-w-11/12 mx-auto  rounded-xl  bg-white/5 backdrop-blur-md">
         <div className="title text-center py-6">
             <h1 className="font-bold text-3xl text-white">Our Most Popular Services</h1>
         </div>
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-8 px-6 shadow-2xl">
             {
-                services.slice(0, 5).map(slide =>
+                services.slice(0, 6).map(slide =>
                     <div
                         key={slide.serviceId}
                         className="card bg-white/10 text-white shadow-sm backdrop-blur-md border border-white/10"
@@ -99,7 +99,7 @@ const Home = () => {
 
 
       <div className="w-full">
-          <div className="other-deals lg:max-w-11/12 mx-auto border-2 border-white rounded-md p-2 bg-white/5 backdrop-blur-md">
+          <div className="other-deals lg:max-w-11/12 mx-auto rounded-md p-2 bg-white/5 backdrop-blur-md">
                   <h1 className="font-bold text-2xl text-white">Our New Deals:</h1>
               <div className="main-card-body max-w-7xl mx-auto border border-white/20 rounded-md grid lg:grid-cols-3 gap-2">
                   <div className="card-body w-full h-full border border-white/20 flex flex-col lg:flex-row" data-aos="fade-up">
