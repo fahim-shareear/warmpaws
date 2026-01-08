@@ -12,6 +12,7 @@ import Login from './Components/User/Login'
 import Privateroutes from './Components/Root/Routes/Privateroutes'
 import Resetpassword from './Components/Root/Routes/Resetpassword'
 import Errorpage from './Components/Errorpage/Errorpage'
+import ServiceDetails from './Components/Pages/ServiceDetails'
 
 
 const router = createBrowserRouter([
@@ -27,7 +28,16 @@ const router = createBrowserRouter([
       {path: "profile", element: <Privateroutes>
         <Profile></Profile>
       </Privateroutes>},
-      {path: "passchange", element: <Resetpassword></Resetpassword>}
+      {path: "passchange", element: <Resetpassword></Resetpassword>},
+      {
+          path: "services/:id",
+          element: (
+            <Privateroutes>
+              <ServiceDetails></ServiceDetails>
+            </Privateroutes>
+          )
+        }
+
     ]
   }
 ])
