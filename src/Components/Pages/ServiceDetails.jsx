@@ -71,7 +71,7 @@ const ServiceDetails = () => {
                 {/* Booking Form */}
                 <div className="mt-8">
                     <h2 className="text-2xl font-semibold mb-4">Book Service</h2>
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full sm:max-w-md">
                         <input
                             type="text"
                             name="name"
@@ -79,7 +79,7 @@ const ServiceDetails = () => {
                             onChange={handleChange}
                             placeholder="Your Name"
                             required
-                            className="input input-bordered input-sm bg-white/10 text-white border-white/30 placeholder-white/60"
+                            className="input input-bordered w-full text-base sm:input-sm bg-white/10 text-white border-white/30 placeholder-white/60"
                         />
                         <input
                             type="email"
@@ -88,11 +88,11 @@ const ServiceDetails = () => {
                             onChange={handleChange}
                             placeholder="Your Email"
                             required
-                            className="input input-bordered input-sm bg-white/10 text-white border-white/30 placeholder-white/60"
+                            className="input input-bordered w-full text-base sm:input-sm bg-white/10 text-white border-white/30 placeholder-white/60"
                         />
                         <button
                             type="submit"
-                            className="btn btn-primary btn-sm bg-white/20 border-white/20 text-white hover:bg-white/30"
+                            className="btn btn-primary w-full sm:w-auto btn-sm bg-white/20 border-white/20 text-white hover:bg-white/30"
                         >
                             Book Now
                         </button>
