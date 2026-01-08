@@ -9,6 +9,8 @@ const googleProvider = new GoogleAuthProvider();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true);
+    const [services, setServices] = useState([]);
+    const [serviceLoading, setServiceLoading] = useState(true);
 
     
 
@@ -50,8 +52,21 @@ const AuthProvider = ({children}) => {
         };
     }, []);
 
+
+    useEffect(()=>{
+        fetch("./Servicedata.json")
+            .then(res => res.json())
+            .then(data=>{
+                setServices(data);
+                setServiceLoading(false);
+            })
+            .catch(()=>{
+                setServiceLoading(false);
+            });
+    }, []);
+
     const authInfo = {
-        user, createUser, signInUser, signOutUser, googlePopUp, loading
+        user, createUser, signInUser, signOutUser, googlePopUp, loading, services, serviceLoading
 
     }
     return (

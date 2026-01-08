@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "/src/assets/images/slide01.png",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "/src/assets/images/slide02.png",
     "category": "Grooming"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Installation of safe, heated bedding to keep pets warm during winter nights.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "/src/assets/images/slide03.png",
     "category": "Comfort"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Complete winter health assessment including joint and skin checkups.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "/src/assets/images/slide04.png",
     "category": "Health"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.6,
     "slotsAvailable": 6,
     "description": "Protective winter boots fitting to guard paws from snow and ice.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "/src/assets/images/slide05.jpg",
     "category": "Clothing"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.5,
     "slotsAvailable": 8,
     "description": "Supervised indoor play activities to keep pets active during cold days.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "/src/assets/images/slide06.jpg",
     "category": "Training"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Special winter care service designed for senior dogs and cats.",
-    "image": "https://i.postimg.cc/example7.png",
+    "image": "/src/assets/images/slide07.jpg",
     "category": "Health"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Indoor obedience training sessions perfect for the winter season.",
-    "image": "https://i.postimg.cc/example8.png",
+    "image": "/src/assets/images/slide08.webp",
     "category": "Training"
   },
   {
@@ -104,43 +104,8 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Custom-designed winter jackets made specifically for your pet.",
-    "image": "https://i.postimg.cc/example9.png",
+    "image": "/src/assets/images/slide09.jpg",
     "category": "Clothing"
-  },
-  {
-    "serviceId": 10,
-    "serviceName": "Winter Diet Consultation",
-    "providerName": "NutriPet Care",
-    "providerEmail": "nutrition@nutripet.com",
-    "price": 28,
-    "rating": 4.6,
-    "slotsAvailable": 4,
-    "description": "Personalized winter diet plans to maintain pet energy and warmth.",
-    "image": "https://i.postimg.cc/example10.png",
-    "category": "Health"
-  },
-  {
-    "serviceId": 11,
-    "serviceName": "Cold Weather Pet Sitting",
-    "providerName": "SafePaws Sitting",
-    "providerEmail": "book@safepaws.com",
-    "price": 22,
-    "rating": 4.7,
-    "slotsAvailable": 7,
-    "description": "Reliable pet sitting service ensuring warmth and safety in winter.",
-    "image": "https://i.postimg.cc/example11.png",
-    "category": "Care"
-  },
-  {
-    "serviceId": 12,
-    "serviceName": "Winter Coat Cleaning Service",
-    "providerName": "FreshFur Cleaners",
-    "providerEmail": "clean@freshfur.com",
-    "price": 15,
-    "rating": 4.5,
-    "slotsAvailable": 9,
-    "description": "Gentle cleaning and maintenance of pet winter coats and outfits.",
-    "image": "https://i.postimg.cc/example12.png",
-    "category": "Grooming"
   }
 ]
+  
