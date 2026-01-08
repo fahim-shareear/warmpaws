@@ -44,7 +44,7 @@ const ServiceDetails = () => {
     };
 
     return (
-        <div className="service-details h-screen p-15" data-aos="flip-left">
+        <div className="service-details min-h-screen p-15" data-aos="flip-left">
             <div className="w-full pb-16">
             <div className="lg:max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-lg p-6 text-white shadow-xl">
                 
