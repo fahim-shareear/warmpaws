@@ -1,5 +1,8 @@
 Netlify Link:  "sensational-arithmetic-7a5438.netlify.app"
 
+A Error page has also been added to the project also.
+
+Please give a feedback on the design also dear Instructor vai.
 
 
 Hi Everyone hope you are all doing well by the grace of the almighty Allah.
