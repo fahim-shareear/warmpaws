@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router'
@@ -13,28 +13,32 @@ import Privateroutes from './Components/Root/Routes/Privateroutes'
 import Resetpassword from './Components/Root/Routes/Resetpassword'
 import Errorpage from './Components/Errorpage/Errorpage'
 import ServiceDetails from './Components/Pages/ServiceDetails'
+import { AuthContext } from './Components/Authentications/AuthContext'
+
 
 
 const router = createBrowserRouter([
-  {path: "/", errorElement: <Errorpage></Errorpage>
+
+
+  {path: "/", errorElement: <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+    <Errorpage></Errorpage>
+  </Suspense>
     ,Component: Root,
     children:[
       {index: true, Component: Home},
-      {path: "services", element: <Privateroutes>
-        <Services></Services>
-      </Privateroutes>},
+      {path: "services", element: <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}><Privateroutes><Services></Services></Privateroutes></Suspense>},
       {path: "register", Component: Register},
       {path: "login", Component: Login},
-      {path: "profile", element: <Privateroutes>
-        <Profile></Profile>
-      </Privateroutes>},
-      {path: "passchange", element: <Resetpassword></Resetpassword>},
+      {path: "profile", element: <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}><Privateroutes><Profile></Profile></Privateroutes></Suspense>},
+      {path: "passchange", element: <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}><Resetpassword></Resetpassword></Suspense>},
       {
           path: "services/:id",
           element: (
-            <Privateroutes>
+            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+              <Privateroutes>
               <ServiceDetails></ServiceDetails>
             </Privateroutes>
+            </Suspense>
           )
         }
 
