@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import Error from "../../assets/error_404.png";
+import Error from "../../../public/assets/error_404.png";
 
 const Errorpage = () => {
   const navigate = useNavigate();

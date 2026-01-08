@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
             <aside>
-                <img src={"/src/assets/tiger_15642419.gif"} alt="" width={100} height={100} className="rounded-full"/>
+                <img src={"./src/assets/tiger_15642419.gif"} alt="" width={100} height={100} className="rounded-full"/>
                 <p className="font-bold">
                 WarmPaws – Pet Care in Winter
                 <br />

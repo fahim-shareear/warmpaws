@@ -2,13 +2,13 @@ import React, { use } from 'react';
 import "../Pages/Style/Home.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import Catshoe from "../../assets/images/cat_shoe.webp"
+import Catshoe from "../../../public/assets/images/cat_shoe.webp"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { AuthContext } from '../Authentications/AuthContext';
 import { NavLink, Link } from 'react-router';
-import Vet from "../../assets/vet.jpg"
+import Vet from "../../../public/assets/vet.jpg"
 
 
 

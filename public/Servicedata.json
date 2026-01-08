@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "/src/assets/images/slide01.png",
+    "image": "../public/assets/images/slide01.png",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "/src/assets/images/slide02.png",
+    "image": "../public/assets/images/slide02.png",
     "category": "Grooming"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Installation of safe, heated bedding to keep pets warm during winter nights.",
-    "image": "/src/assets/images/slide03.png",
+    "image": "../public/assets/images/slide03.png",
     "category": "Comfort"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Complete winter health assessment including joint and skin checkups.",
-    "image": "/src/assets/images/slide04.png",
+    "image": "../public/assets/images/slide04.png",
     "category": "Health"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.6,
     "slotsAvailable": 6,
     "description": "Protective winter boots fitting to guard paws from snow and ice.",
-    "image": "/src/assets/images/slide05.jpg",
+    "image": "../public/assets/images/slide05.png",
     "category": "Clothing"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.5,
     "slotsAvailable": 8,
     "description": "Supervised indoor play activities to keep pets active during cold days.",
-    "image": "/src/assets/images/slide06.jpg",
+    "image": "../public/assets/images/slide06.png",
     "category": "Training"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Special winter care service designed for senior dogs and cats.",
-    "image": "/src/assets/images/slide07.jpg",
+    "image": "../public/assets/images/slide07.png",
     "category": "Health"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Indoor obedience training sessions perfect for the winter season.",
-    "image": "/src/assets/images/slide08.webp",
+    "image": "../public/assets/images/slide08.png",
     "category": "Training"
   },
   {
@@ -104,7 +104,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Custom-designed winter jackets made specifically for your pet.",
-    "image": "/src/assets/images/slide09.jpg",
+    "image": "../public/assets/images/slide09.png",
     "category": "Clothing"
   }
 ]
