@@ -1,4 +1,4 @@
-Netlify Link: sensational-arithmetic-7a5438.netlify.app
+Netlify Link:  "sensational-arithmetic-7a5438.netlify.app"
 
 
 
@@ -30,5 +30,5 @@ From the packages suggested for this Assignment I have used these three npm reac
     1. AOS Animation.
 
     2. Swiper for the Slide.
-    
+
     3. React-hot-toast --> On the Service Booking page.
