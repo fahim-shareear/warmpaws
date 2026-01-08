@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast';
 
 const Root = () => {
     return (
-        <div>
+        <div className="min-h-screen bg-linear-to-br from-purple-700 via-indigo-700 to-pink-600 text-white">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router';
 import { AuthContext } from '../Authentications/AuthContext';
 import { toast } from 'react-toastify';
 import { FaHouseUser } from 'react-icons/fa';
+import "../Pages/Style/Home.css";
 
 const Navbar = () => {
     const {user, signOutUser, loading} = use(AuthContext);
@@ -32,7 +33,7 @@ const Navbar = () => {
         <li><NavLink to="/profile">My Profile</NavLink></li>
     </>
     return (
-        <div className="navbar shadow-sm sticky top-0 bg-primary z-100">
+        <div className="navbar shadow-sm sticky top-0 bg-transparent! backdrop-blur-lg z-100">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +41,7 @@ const Navbar = () => {
                 </div>
                 <ul
                     tabIndex="-1"
-                    className="menu menu-sm dropdown-content bg-primary rounded-box z-1 mt-3 w-52 p-2 shadow font-bold text-[15px]">
+                    className="menu menu-sm dropdown-content bg-transparent rounded-box z-1 mt-3 w-52 p-2 shadow font-bold text-[15px]">
                     {menu}
                 </ul>
                 </div>
